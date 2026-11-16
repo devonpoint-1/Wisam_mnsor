@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#06080f"><title>الوسام المنصور — رسوم متحركة</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#06080f;--navy-2:#0d1220;--navy-3:#141b2e;--gold:#c8a84b;--gold-l:#e0c26a;--gold-dim:rgba(200,168,75,.14);--border:rgba(200,168,75,.22);--border-2:rgba(255,255,255,.08);--text:#e8ecf5;--text-2:#a8b0c6;--text-3:#7c859d;--r-sm:10px;--r-md:16px}
+:root {
+  --gold:       #c8a84b;
+  --gold-l:     #e5c96b;
+  --gold-ll:    #f5e0a0;
+  --gold-dim:   rgba(200,168,75,0.15);
+  --navy:       #06080f;
+  --navy-2:     #0d1320;
+  --navy-3:     #141d2e;
+  --navy-4:     #1a2640;
+  --blue:       #1e40af;
+  --blue-l:     #3b82f6;
+  --red:        #991b1b;
+  --red-l:      #ef4444;
+  --green:      #065f46;
+  --green-l:    #10b981;
+  --text:       #dde5f0;
+  --text-2:     #8fa3bf;
+  --text-3:     #5a7090;
+  --border:     rgba(200,168,75,0.18);
+  --border-2:   rgba(255,255,255,0.06);
+  --r-sm:       10px;
+  --r-md:       16px;
+  --r-lg:       22px;
+  --r-xl:       30px;
+  --shadow:     0 8px 32px rgba(0,0,0,0.5);
+  --shadow-g:   0 0 40px rgba(200,168,75,0.2);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--navy);color:var(--text);font:17px/1.9 'Cairo','DejaVu Sans',sans-serif}
+main{max-width:860px;margin:0 auto;padding:0 14px 40px}
+.hero{padding:30px 16px 22px;text-align:center;background:radial-gradient(ellipse at top,rgba(200,168,75,.18),transparent 65%);border-bottom:1px solid var(--border)}
+.hero h1{font-family:'Amiri',serif;font-size:2.1rem;color:var(--gold);margin:0;line-height:1.4}
+.hero p{margin:4px 0 0;color:var(--text-2);font-size:.9rem}
+.lec{background:var(--navy-2);border:1px solid var(--border-2);border-radius:var(--r-md);padding:18px;margin:16px 0}
+.lec h2{font-family:'Amiri',serif;font-size:1.35rem;color:var(--gold);margin:0 0 8px;display:flex;gap:10px;align-items:center;line-height:1.5}
+.lec h2 i{font:700 1rem 'Cairo',sans-serif;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-l));color:var(--navy);display:grid;place-items:center;flex:none}
+h3{font-size:.95rem;color:var(--gold-l);margin:14px 0 4px}
+p{margin:6px 0;color:var(--text-2)} b{color:var(--text)} ul{padding-right:20px;margin:6px 0} li{margin:3px 0}
+.flow{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px}
+.nd{background:var(--navy-3);border:1px solid var(--border-2);border-radius:var(--r-sm);padding:6px 12px;font-size:.92rem;line-height:1.6;opacity:0;transform:translateY(10px);transition:opacity .5s calc(var(--i)*.12s),transform .5s calc(var(--i)*.12s),border-color .3s,background .3s,box-shadow .3s}
+.nd small{display:block;color:var(--text-3);font-size:.74rem;line-height:1.5}
+.flow.go .nd{opacity:1;transform:none}
+.flow:not(.plain) .nd:not(:last-child)::after{content:"←";color:var(--gold);margin-right:8px}
+.flow.go .nd.on{border-color:var(--gold);background:var(--gold-dim);box-shadow:0 0 14px rgba(200,168,75,.35)}
+.bar{margin:8px 0}.bar b{font-size:.88rem;font-weight:600}
+.track{height:14px;background:var(--navy-3);border-radius:8px;overflow:hidden;margin-top:2px}
+.fill{height:100%;width:var(--from,15%);background:var(--c,var(--gold));border-radius:8px;transition:width 2.8s ease}
+.bars.go .fill{width:var(--w)}
+.cv svg{width:100%;max-width:340px;display:block;margin:6px auto;font:600 12px 'Cairo',sans-serif;fill:var(--text)}
+.cv .c,.cv .ctr{animation-play-state:paused}
+.cv .c{animation:conv 3.5s ease-in-out infinite alternate}
+@keyframes conv{from{transform:translate(var(--x),var(--y))}to{transform:translate(calc(var(--x)*.15),calc(var(--y)*.15))}}
+.cv .ctr{fill:var(--gold);font-size:11px;stroke:#06080f;stroke-width:3px;paint-order:stroke;opacity:0;animation:fc 7s infinite}
+@keyframes fc{0%,30%{opacity:0}50%,70%{opacity:1}100%{opacity:0}}
+.cv.go .c,.cv.go .ctr{animation-play-state:running}
+.note{font-size:.8rem;color:var(--text-3);text-align:center;margin:20px 6px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.nd{opacity:1!important;transform:none!important}.fill{width:var(--w)!important}.cv .ctr{opacity:1}}
+
+.rg svg,.sp svg,.sg svg{width:100%;max-width:420px;display:block;margin:6px auto;direction:ltr;font:600 11.5px 'Cairo','DejaVu Sans',sans-serif;fill:var(--text)}
+.nn{fill:var(--gold);font-weight:700;font-size:12px}.cc{fill:var(--gold);font:700 12px 'Cairo',sans-serif}
+.vp{position:relative;padding-right:32px;margin:8px 0 12px}
+.vp:before{content:"";position:absolute;right:11px;top:10px;bottom:10px;width:2px;background:var(--border)}
+.st{position:relative;background:var(--navy-3);border:1px solid var(--border-2);border-radius:var(--r-sm);padding:5px 12px;margin:6px 0;font-size:.92rem;line-height:1.6;animation:lit calc(var(--n)*1.2s) calc(var(--i)*1.2s) infinite}
+.st:before{content:attr(data-k);position:absolute;right:-31px;top:6px;width:22px;height:22px;border-radius:50%;background:var(--navy);border:2px solid var(--gold);color:var(--gold);font:700 .72rem 'Cairo',sans-serif;display:grid;place-items:center}
+.st small{display:block;color:var(--text-3);font-size:.74rem;line-height:1.5}
+@keyframes lit{from{border-color:var(--gold);background:var(--gold-dim);box-shadow:0 0 14px rgba(200,168,75,.35)}to{border-color:rgba(255,255,255,.08);background:#141b2e;box-shadow:none}}
+.pk{position:absolute;right:6px;width:12px;height:12px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:fall calc(var(--n)*1.2s) linear infinite}
+@keyframes fall{from{top:10px}to{top:calc(100% - 22px)}}
+.tp.go .fill{width:28%}.tp.go .bar.hot .fill{width:96%}.tp .bar.hot b{color:var(--gold)}
+.fc{perspective:900px;height:160px;margin:10px 0;cursor:pointer}
+.fi{position:relative;height:100%;transition:transform .8s;transform-style:preserve-3d}
+.fc.b .fi{transform:rotateY(180deg)}
+.fs{position:absolute;inset:0;backface-visibility:hidden;border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;display:grid;place-items:center;text-align:center;background:var(--navy-3);line-height:1.8}
+.fs.bk{transform:rotateY(180deg);background:var(--gold-dim)}
+.fs small{position:absolute;top:6px;left:10px;color:var(--text-3);font-size:.7rem}
+</style></head><body>
+<header class="hero"><h1>الوسام المنصور — رسوم متحركة تشرح المحاضرات</h1><p>المنظور الإعلامي والنفسي والاجتماعي للتعامل مع الأزمات والكوارث · سبع محاضرات</p></header>
+<main>
+
+<section class="lec"><h2><i>١</i>مدخل إلى المنظور الإعلامي والنفسي والاجتماعي</h2>
+<p>الأزمة موقف حرج ونقطة تحول تتطلب قراراً حاسماً في وقت ضيق. الكارثة حدث مفجع تتجاوز آثاره غالباً الإمكانيات المحلية، والطوارئ حدث تشغيلي محدود يُدار بالإمكانيات المعتادة.</p>
+<ul><li><b>الإعلامي:</b> معلومات موثوقة ومستمرة تمنع الفراغ الذي تملؤه الشائعات.</li><li><b>النفسي:</b> الخوف والقلق وأثر التوتر في متخذ القرار وبناء المرونة.</li><li><b>الاجتماعي:</b> التضامن والعمل التطوعي ومكافحة الاحتكار والتنمر.</li></ul>
+<p>إغفال المشاعر يُفشل أدق الخطط اللوجستية، لذلك تُدمج المحاور الثلاثة في منظومة الأمن القومي الشامل.</p>
+<div class="viz cv"><svg viewBox="0 0 320 220" role="img" aria-label="تكامل المحاور الثلاثة">
+<g class="c" style="--x:0px;--y:-62px"><circle cx="160" cy="104" r="54" fill="rgba(96,165,250,.25)" stroke="#60a5fa"/></g>
+<g class="c" style="--x:66px;--y:44px"><circle cx="160" cy="104" r="54" fill="rgba(167,139,250,.25)" stroke="#a78bfa"/></g>
+<g class="c" style="--x:-66px;--y:44px"><circle cx="160" cy="104" r="54" fill="rgba(52,211,153,.25)" stroke="#34d399"/></g>
+<text x="160" y="14" text-anchor="middle">الإعلامي</text><text x="282" y="200" text-anchor="middle">النفسي</text><text x="38" y="200" text-anchor="middle">الاجتماعي</text>
+<text class="ctr" x="160" y="108" text-anchor="middle">الأمن القومي الشامل</text></svg></div>
+<h3>مستوى التهديد</h3><div class="bars viz"><div class="bar"><b>طوارئ: تشغيلي ومحلي محدود</b><div class="track"><div class="fill" style="--w:30%;--from:6%;--c:#34d399"></div></div></div><div class="bar"><b>أزمة: استراتيجي يهدد كيان المنظومة</b><div class="track"><div class="fill" style="--w:65%;--from:6%"></div></div></div><div class="bar"><b>كارثة: وجودي ودمار وشلل كامل</b><div class="track"><div class="fill" style="--w:100%;--from:6%;--c:#f87171"></div></div></div></div><h3>مراحل الاتصال الاستراتيجي</h3>
+<div class="rg viz" data-c="الاتصال" data-f="قبل الأزمة~إنذار وتدريب|اندلاعها~متحدث رسمي واحتواء الصدمة|تفاقمها~دحض الشائعات ودعم مستمر|التعافي~تقييم وإعادة بناء الثقة"></div></section>
+
+<section class="lec"><h2><i>٢</i>المفهوم الإعلامي ووظائف الإعلام وقت الأزمات</h2>
+<p>الإعلام عنصر استراتيجي: يوجّه الرأي العام ويدير الإدراك، ويفتح قناة مباشرة بين الدولة والجمهور تدعم شرعية القرارات.</p>
+<h3>تطور الإعلام</h3><div class="vp viz" data-f="تقليدي~لاحق وبطيء|فضائي~بث مباشر عابر للحدود|رقمي~تفاعل فوري|ذكي~بيانات ضخمة وتنبؤ"></div>
+<h3>وظائفه عبر المراحل</h3><div class="flow viz plain" data-f="قبل~إنذار مبكر وتوعية وتخطيط|أثناء~إعلام لحظي ومتحدث موحد وطمأنة|بعد~تقييم وتعافٍ وإعادة الثقة"></div></section>
+
+<section class="lec"><h2><i>٣</i>نظريات الإعلام والاتصال</h2>
+<p>النظرية تفسّر العلاقة بين الأزمة والإعلام والجمهور؛ فإدارة الأزمة إعلامياً إدارة للمعنى والإدراك والثقة لا للمعلومات فقط.</p>
+<div class="flow viz plain" data-f="ما القضية البارزة؟~ترتيب الأولويات|كيف يفهمها الجمهور؟~التأطير|لماذا يبحث عن المعلومات؟~الاستخدامات والإشباعات|متى تقوى الوسيلة؟~الاعتماد على الإعلام|لماذا يصمت البعض؟~دوامة الصمت|لماذا تتفاوت الاستفادة؟~فجوة المعرفة|كيف نحمي الثقة؟~استعادة الصورة وSCCT"></div>
+<h3>ترتيب الأولويات: الأضواء تتنقل بين القضايا</h3><div class="bars tp viz"><div class="bar"><b>الخسائر البشرية</b><div class="track"><div class="fill"></div></div></div><div class="bar"><b>كفاءة الإنقاذ</b><div class="track"><div class="fill"></div></div></div><div class="bar"><b>المسؤولية الإدارية</b><div class="track"><div class="fill"></div></div></div></div><h3>التأطير: الحدث نفسه بستة أطر</h3><div class="rg viz" data-c="الحدث" data-f="المسؤولية|الضحية|الصراع|الحل|الخوف|التضامن"></div><h3>دوامة الصمت</h3><div class="sg viz"><svg viewBox="0 0 360 130"><circle cx="90" cy="55" r="30" fill="#f87171"><animate attributeName="r" values="30;30;10;10;30" keyTimes="0;.15;.55;.9;1" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;.3;.3;1" keyTimes="0;.15;.55;.9;1" dur="7s" repeatCount="indefinite"/></circle><circle cx="220" cy="55" r="24" fill="#60a5fa"><animate attributeName="r" values="24;24;38;38;24" keyTimes="0;.15;.55;.9;1" dur="7s" repeatCount="indefinite"/></circle><circle cx="305" cy="55" r="18" fill="#60a5fa"><animate attributeName="r" values="18;18;28;28;18" keyTimes="0;.15;.55;.9;1" dur="7s" repeatCount="indefinite"/></circle><text x="90" y="118" text-anchor="middle">رأي الأقلية يصمت</text><text x="262" y="118" text-anchor="middle">الأغلبية الظاهرة تعلو</text></svg></div><ul><li>استعادة الصورة: إنكار، تبرير، تقليل الإساءة، تصحيح، اعتذار وتحمل مسؤولية.</li><li>SCCT: لا توجد استجابة واحدة تصلح لكل الأزمات، وكلما ارتفعت المسؤولية المدركة زادت أهمية التصحيح والاعتذار.</li></ul></section>
+
+<section class="lec"><h2><i>٤</i>الاتصال في المواقف الحرجة</h2>
+<p><b>نجاح الإدارة = جودة القرار + جودة الاتصال به في الوقت المناسب.</b> ولا تعني السرعة نشر غير المؤكد، ولا الدقة الصمتَ حتى تكتمل التفاصيل.</p>
+<h3>عناصر الاتصال الجيد</h3><div class="flow viz plain" data-f="سرعة|دقة|وضوح|تعاطف|استمرارية"></div>
+<h3>النموذج العملي: سبع مراحل</h3><div class="vp viz" data-f="الرصد|التحقق|تحديد الجمهور|بناء الرسالة|اختيار المتحدث|اختيار القناة|المتابعة والتحديث"></div>
+<h3>الرسالة الأولى</h3><div class="vp viz" data-f="الاعتراف~الجهة تتابع الحدث|الحقيقة المؤكدة|الإجراء|التعليمات|التعاطف|التحديث~متى وأين"></div>
+<p>القاعدة المهنية: ما نعرفه، وما لا نعرفه، وما نتحقق منه. ومن الأخطاء الشائعة: الصمت، والإنكار غير المبرر، والتناقض بين المصادر، والتفاصيل المفرطة، واللغة التقنية، وتجاهل المشاعر.</p></section>
+
+<section class="lec"><h2><i>٥</i>إدارة المعلومات والشائعات</h2>
+<p>الثقة في ناقل المعلومة لا تعني صحتها. الشائعة غير مؤكدة وتنتشر عند الغموض، والخبر الزائف مختلق، والتضليل يقود إلى فهم خاطئ ولو بمعلومة صحيحة جزئياً.</p>
+<h3>كيف تتحول الشائعة إلى أزمة</h3><div class="rg viz" data-c="حلقة الخوف" data-f="شائعة|خوف|شراء زائد|زيادة الطلب|نقص مؤقت|ارتفاع الأسعار|مزيد من الخوف"></div>
+<h3>قاعدة التحقق</h3><div class="flow viz" data-f="توقف~لا تشارك فوراً|تحقق~المصدر والتاريخ والدليل|قرر~إن لم تتحقق فلا تنشر"></div>
+<div class="sg viz"><svg viewBox="0 0 360 160"><text x="180" y="12" text-anchor="middle">ما يصلك</text><text x="180" y="156" text-anchor="middle">ما تنشره</text><rect x="85" y="66" width="190" height="28" rx="8" fill="#141b2e" stroke="#c8a84b"/><text x="180" y="85" text-anchor="middle" class="nn">توقف – تحقق – قرر</text><circle r="8" fill="#34d399"><animateMotion dur="3.5s" repeatCount="indefinite" path="M130,20 V140"/></circle><circle r="8" fill="#34d399"><animateMotion dur="3.5s" begin="1.75s" repeatCount="indefinite" path="M230,20 V140"/></circle><circle r="8" fill="#f87171"><animateMotion dur="3.5s" begin=".9s" repeatCount="indefinite" path="M180,20 V58 V20"/></circle></svg></div><h3>النموذج المتكامل</h3><div class="rg viz" data-c="إدارة المعلومات" data-f="ارصد|تحقق|قيّم|تواصل|تابع"></div><h3>بروتوكول مواجهة الشائعة</h3><div class="rg viz" data-c="الشائعة" data-f="رصد~الكلمات والأسئلة المتكررة|تصنيف~سلامة أو صحة أو إمدادات أو سمعة|تحقق~الوثائق والجهات والبحث العكسي|تصحيح~الادعاء ثم الحقيقة والدليل|متابعة~قياس التراجع وتحديث التصحيح"></div><h3>كيف تنتشر الشائعة</h3><div class="sp viz" data-s="شائعة|#f87171|قلق,خوف,تكهنات,تكرار,شراء زائد,تناقض,غضب,ذعر"></div>
+<p>كلما دفعك المحتوى إلى التصرف بسرعة أعطِ نفسك وقتاً أطول للتحقق. تجاهل الشائعة ليس دائماً الحل؛ الأفضل تقديم الحقيقة بمصدر موثوق. <b>لا تكن أول من ينشر؛ كن أول من يتحقق.</b></p></section>
+
+<section class="lec"><h2><i>٦</i>الإعلام الرقمي ووسائل التواصل وإدارة الأزمات</h2>
+<p>تتسع الأزمة حين تزيد الفجوة بين ما يحتاج الجمهور إلى معرفته وما تستطيع المؤسسة قوله؛ فجوة زمنية أو معرفية أو أخلاقية. الإدارة الجيدة تضيّقها بصدق.</p>
+<div class="bars viz"><div class="bar"><b>ما يحتاج الجمهور إلى معرفته</b><div class="track"><div class="fill" style="--w:100%;--from:100%;--c:#60a5fa"></div></div></div><div class="bar"><b>ما تقوله المؤسسة، ويتسع بالصدق والتحديث</b><div class="track"><div class="fill" style="--w:92%;--from:18%"></div></div></div></div>
+<h3>إطار RACE</h3><div class="rg viz" data-c="RACE" data-f="بحث~رصد الحوار والمصادر|تخطيط~الهدف والمتحدث والقناة|اتصال~نشر وإدارة التعليقات|تقييم~الفهم والسلوك والثقة"></div>
+<h3>التسلسل وقت الأزمة</h3><div class="flow viz" data-f="اعترف|تحقق|وجّه|حدّث"></div>
+<h3>لماذا تتضخم الأزمات على المنصات؟</h3><div class="sp viz" data-s="منشور|#60a5fa|موظف,شاهد,صحفي,مؤثر,صفحة مجهولة,جهة رسمية,صورة قديمة,خوارزمية"></div><ul><li>كوفيد-19: حملة «هنعيش مع بعض» جمعت الرسالة الطبية والاجتماعية (طلب المساعدة ليس عاراً).</li><li>إيفرغيفن 2021: صارت أزمة صورة ومسؤولية وتفاوض، ولا تكفي رسالة واحدة لجماهير متعددة.</li><li>كثرة المشاهدات لا تعني نجاح الرسالة إن لم يفهم الجمهور الإجراء أو لم يثق بالمصدر.</li></ul></section>
+
+<section class="lec"><h2><i>٧</i>التأثيرات النفسية والدعم النفسي والاجتماعي</h2>
+<p>الأزمة تهدد إحساس الأفراد بالأمان والسيطرة والمعنى. والإعلام يخفف الغموض أو يضاعف الخوف إذا نقل الشائعات والصور الصادمة بلا مسؤولية. حدود المحاضرة: إسعاف نفسي أولي لا علاج ولا تشخيص.</p>
+<ul><li>الخوف استجابة إنذار طبيعية وليس ضعفاً؛ والذعر خوف شديد وسلوك اندفاعي يزيد مع الغموض وغياب قيادة موثوقة والشائعات.</li><li>الإنكار قد يحمي مؤقتاً لكنه يصير خطراً إن منع الإخلاء؛ يُعالج بمعلومات متدرجة لا بالسخرية. والغضب يُقابل بالاعتراف بالألم والتحقق وشرح الإجراءات.</li></ul>
+<h3>معادلة الضغط (تفسيرية لا إحصائية)</h3>
+<p>شدة التهديد المُدرَك + الغموض + فقدان السيطرة − (الدعم + الثقة + الاستعداد) = مستوى الضغط</p>
+<div class="sg viz"><svg viewBox="0 0 300 180"><defs><linearGradient id="gg"><stop offset="0" stop-color="#34d399"/><stop offset=".5" stop-color="#e0c26a"/><stop offset="1" stop-color="#f87171"/></linearGradient></defs><path d="M30,150 A120,120 0 0 1 270,150" fill="none" stroke="url(#gg)" stroke-width="16" stroke-linecap="round"/><g><animateTransform attributeName="transform" type="rotate" values="62 150 150;-62 150 150;-62 150 150;62 150 150;62 150 150" keyTimes="0;.35;.5;.85;1" dur="8s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .2 1;0 0 1 1;.4 0 .2 1;0 0 1 1"/><line x1="150" y1="150" x2="150" y2="48" stroke="#e8ecf5" stroke-width="4" stroke-linecap="round"/></g><circle cx="150" cy="150" r="9" fill="#c8a84b"/><text x="30" y="172" text-anchor="middle">منخفض</text><text x="270" y="172" text-anchor="middle">مرتفع</text><text x="150" y="176" text-anchor="middle" class="nn">مستوى الضغط<animate attributeName="opacity" values="1;1;1" dur="1s" repeatCount="indefinite"/></text><text x="150" y="120" text-anchor="middle" fill="#f87171"><animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;.1;.2;.8;.9;1" dur="8s" repeatCount="indefinite"/>بلا دعم أو ثقة أو استعداد</text><text x="150" y="120" text-anchor="middle" fill="#34d399"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.25;.35;.55;.65;1" dur="8s" repeatCount="indefinite"/>مع الدعم والثقة والاستعداد</text></svg></div>
+<h3>الذعر: حين يغيب المصدر الموثوق</h3><div class="sp viz" data-s="غموض|#f87171|شائعة,تقليد,ذعر,اندفاع,خوف,تكرار,غضب,قلق"></div><h3>وحين تتقدم رسالة رسمية واضحة</h3><div class="sp viz" data-s="رسالة رسمية|#34d399|تعليمات,تحديث,ثقة,تعاون"></div><h3>الإسعافات النفسية الأولية</h3><div class="vp viz" data-f="انظر~السلامة والاحتياجات العاجلة|استمع~بهدوء ودون إجبار على السرد|اربط~بالخدمات والأسرة"></div>
+<h3>بنية إجابة المتحدث</h3><div class="vp viz" data-f="تعاطف|حقيقة مؤكدة|إجراء|تعليمات|حدود المعرفة|موعد التحديث"></div><h3>مسار التعافي النفسي</h3><div class="vp viz" data-f="الأيام الأولى~السلامة والمعلومات والغذاء والماء والمأوى وجمع شمل الأسر|الأسابيع التالية~الروتين والتعليم المؤقت والدعم الاجتماعي والإحالة|الأشهر التالية~خدمات متخصصة وسبل العيش ومعالجة الفقد وتوثيق الدروس|المدى الطويل~الاستعداد والتدريب وثقافة الوقاية والصمود"></div><h3>اختبار الرسالة قبل النشر</h3><div class="flow viz plain" data-f="الوضوح|القابلية للتنفيذ|المصدر|الشمول|الأمن النفسي|الاتساق"></div><p>التغطية الأخلاقية: لا تُنشر أسماء الضحايا قبل اعتمادها رسمياً، ولا تُستغل لحظة الانهيار العاطفي، ولا تُستخدم مؤثرات درامية تجعل الألم فرجة. والتعافي عملية تدريجية لا عودة ميكانيكية، وقد تعود بعض الأعراض عند الذكرى دون أن يعني ذلك فشله.</p></section>
+<section class="lec"><h2><i>+</i>بطاقات المراجعة</h2><p>بطاقة تنقلب تلقائياً بين السؤال والجواب؛ اضغط عليها للانتقال.</p><div class="fc" id="fc"><div class="fi"><div class="fs"><span class="fq"></span><small></small></div><div class="fs bk"><span class="fa"></span></div></div></div></section>
+
+<p class="note">رسوم متحركة تشرح محتوى الملف الأصلي. لم تُدرج المصطلحات كاملة ولا أسئلة الامتحان العشرة. وللنسب الواردة في بعض الشرائح طابع توضيحي غير موثق كما يشير الملف.</p>
+</main>
+<script>
+document.querySelectorAll('.flow').forEach(f=>{f.innerHTML=f.dataset.f.split('|').map((s,i)=>{const[a,b]=s.split('~');return `<div class="nd" style="--i:${i}">${a}${b?`<small>${b}</small>`:''}</div>`}).join('')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('go')}),{threshold:.25});
+document.querySelectorAll('.viz').forEach(v=>io.observe(v));
+setInterval(()=>document.querySelectorAll('.flow.go').forEach(f=>{const n=[...f.children];f._k=((f._k??-1)+1)%n.length;n.forEach((x,i)=>x.classList.toggle('on',i===f._k))}),1200);
+
+const E=s=>s.split('|').map(x=>x.split('~'));
+document.querySelectorAll('.vp').forEach(v=>{const it=E(v.dataset.f);v.style.setProperty('--n',it.length);v.innerHTML='<i class="pk"></i>'+it.map(([a,b],i)=>`<div class="st" data-k="${i+1}" style="--i:${i}">${a}${b?`<small>${b}</small>`:''}</div>`).join('')});
+document.querySelectorAll('.rg').forEach(el=>{const it=E(el.dataset.f),n=it.length,R=85,cx=200,cy=150,D=n*1.4;let g='';
+it.forEach(([t],i)=>{const a=-Math.PI/2-i*2*Math.PI/n,c=Math.cos(a),s=Math.sin(a),x=cx+R*c,y=cy+R*s,an=Math.abs(c)<.3?'middle':c>0?'start':'end';
+g+=`<circle cx="${x}" cy="${y}" r="15" fill="#141b2e" stroke="#2a3350" stroke-width="2"><animate attributeName="stroke" values="#c8a84b;#2a3350;#2a3350" keyTimes="0;${1/n};1" calcMode="discrete" dur="${D}s" begin="${i*1.4}s" repeatCount="indefinite"/></circle><text x="${x}" y="${y+4}" text-anchor="middle" class="nn">${i+1}</text><text x="${cx+(R+26)*c}" y="${cy+(R+26)*s+4}" text-anchor="${an}">${t}</text>`});
+el.innerHTML=`<svg viewBox="0 0 400 300"><circle cx="${cx}" cy="${cy}" r="${R}" fill="none" stroke="rgba(200,168,75,.25)" stroke-dasharray="4 5"/><text x="${cx}" y="${cy+4}" text-anchor="middle" class="cc">${el.dataset.c||''}</text><circle r="6" fill="#c8a84b"><animateMotion dur="${D}s" repeatCount="indefinite" path="M${cx},${cy-R} A${R},${R} 0 1,0 ${cx},${cy+R} A${R},${R} 0 1,0 ${cx},${cy-R}"/></circle>${g}</svg>`});
+document.querySelectorAll('.sp').forEach(el=>{const[c,col,lab]=el.dataset.s.split('|'),L=lab.split(','),P=[[70,40],[330,40],[40,120],[360,120],[90,205],[310,205],[200,235],[200,22]],D=6;let g='';
+L.forEach((l,i)=>{const p=P[i],d=Math.hypot(p[0]-200,p[1]-125)/190,a=(.12+.45*d).toFixed(2);
+g+=`<circle cx="${p[0]}" cy="${p[1]}" r="11" fill="#141b2e" stroke="#2a3350" stroke-width="2"><animate attributeName="fill" values="#141b2e;${col};${col};#141b2e" keyTimes="0;${a};.88;1" dur="${D}s" repeatCount="indefinite"/></circle><text x="${p[0]}" y="${p[1]+(p[1]>125?27:-17)}" text-anchor="middle">${l}</text>`});
+el.innerHTML=`<svg viewBox="0 0 400 270">${g}<circle cx="200" cy="125" r="16" fill="${col}"/><circle cx="200" cy="125" r="16" fill="none" stroke="${col}" stroke-width="2"><animate attributeName="r" from="16" to="190" dur="${D/2}s" repeatCount="indefinite"/><animate attributeName="opacity" from=".9" to="0" dur="${D/2}s" repeatCount="indefinite"/></circle><text x="200" y="129" text-anchor="middle" fill="#06080f" style="font-size:9px;font-weight:700">${c}</text></svg>`});
+setInterval(()=>document.querySelectorAll('.tp.go').forEach(t=>{const b=[...t.querySelectorAll('.bar')];t._k=((t._k??-1)+1)%b.length;b.forEach((x,i)=>x.classList.toggle('hot',i===t._k))}),1800);
+const C=[["ما الفرق بين الطوارئ والأزمة والكارثة؟","الطوارئ: تهديد تشغيلي ومحلي محدود. الأزمة: استراتيجي يهدد كيان المنظومة. الكارثة: وجودي يسبب دماراً وشللاً كاملاً."],["ما الفرق بين ترتيب الأولويات والتأطير؟","الأولويات: أهمية القضية وبروزها. التأطير: الطريقة التي تُعرَّف وتُفسَّر بها."],["ما عناقيد الأزمة في SCCT؟","الضحية (مسؤولية منخفضة)، الحوادث (أعلى)، الأفعال القابلة للمنع (مرتفعة)."],["ما فجوة المعرفة وما حلها؟","تفاوت وصول المعلومات بين الفئات. الحل: رسائل متعددة المستويات والقنوات."],["ما التحيز التأكيدي؟","ميل الإنسان إلى قبول المعلومات المتفقة مع معتقداته السابقة بسهولة أكبر."],["ما الحرب المعلوماتية؟","استخدام المعلومات أو استهداف نظمها للتأثير في قرارات الخصم أو سلوكه أو معنوياته."],["ما مؤشرات الزمن في قياس الأداء؟","زمن الاكتشاف، وزمن الاعتراف، وزمن التصحيح."],["متى يصبح الإنكار خطراً؟","عندما يمنع الإخلاء أو طلب الرعاية أو الالتزام بتعليمات السلامة."],["متى نحيل الشخص إلى مختص؟","عند استمرار المعاناة بشدة أو تعطل الحياة اليومية أو نوبات هلع متكررة أو أفكار إيذاء."],["ما إعادة السياق؟","صورة أو مقطع خارج زمنه أو مكانه يُقدَّم كحدث راهن."]];
+const fc=document.getElementById('fc');let ci=0;
+function sh(){fc.querySelector('.fq').textContent=C[ci][0];fc.querySelector('.fa').textContent=C[ci][1];fc.querySelector('small').textContent=(ci+1)+' / '+C.length}
+function tick(){if(!fc.classList.contains('b')){fc.classList.add('b')}else{fc.classList.remove('b');setTimeout(()=>{ci=(ci+1)%C.length;sh()},800)}}
+sh();fc.onclick=tick;setInterval(tick,3800);
+</script></body></html>
